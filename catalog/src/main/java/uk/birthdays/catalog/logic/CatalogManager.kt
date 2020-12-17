@@ -6,8 +6,7 @@ import uk.birthdays.core.NetworkManager
 import uk.birthdays.core.entities.app.Person
 
 //todo inject networkManager with DI
-class CatalogManager(networkManager: NetworkManager = NetworkManager()) {
-    private val interactor = CatalogInteractor(networkManager)
+class CatalogManager(private val interactor: CatalogInteractor = CatalogInteractor(NetworkManager())) {
 
     suspend fun getPersons(): List<Person>{
         var list = listOf<Person>()

@@ -10,12 +10,11 @@ import kotlinx.coroutines.withContext
 import uk.birthdays.catalog.logic.CatalogManager
 import uk.birthdays.core.entities.app.Person
 
-class CatalogViewModel: ViewModel() {
+//todo inject CatalogManager with DI
+class CatalogViewModel(private val catalogManager: CatalogManager = CatalogManager()): ViewModel() {
     private val persons = MutableLiveData<List<Person>>()
     private val loading = MutableLiveData<Boolean>()
-    //todo inject with DI
-    private val catalogManager = CatalogManager()
-    
+
     fun loadPersons(){
         if (persons.value.isNullOrEmpty()){
             viewModelScope.launch {
