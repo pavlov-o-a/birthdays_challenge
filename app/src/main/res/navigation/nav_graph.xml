@@ -6,6 +6,7 @@
     app:startDestination="@id/CatalogFragment">
 
     <fragment
+        app:moduleName="catalog"
         android:id="@+id/CatalogFragment"
         android:name="uk.birthdays.catalog.ui.CatalogFragment"
         android:label="@string/catalog_label"
@@ -17,6 +18,7 @@
     </fragment>
 
     <fragment
+        app:moduleName="profile"
         android:id="@+id/ProfileFragment"
         android:name="uk.birthdays.profile.ProfileFragment"
         tools:layout="@layout/layout_profile"/>
