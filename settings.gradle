@@ -1,2 +1,3 @@
+include ':catalog'
 include ':app'
 rootProject.name = "Birthdays"
