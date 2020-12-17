@@ -11,8 +11,13 @@
         android:label="@string/catalog_label"
         tools:layout="@layout/layout_catalog">
 
-<!--        <action-->
-<!--            android:id="@+id/action_FirstFragment_to_SecondFragment"-->
-<!--            app:destination="@id/SecondFragment" />-->
+        <action
+            android:id="@+id/action_Catalog_to_Profile"
+            app:destination="@id/ProfileFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="uk.birthdays.profile.ProfileFragment"
+        tools:layout="@layout/layout_profile"/>
 </navigation>

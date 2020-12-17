@@ -1,3 +1,5 @@
 package uk.birthdays.core.entities.app
 
-data class Person(val name: String, val birthday: String)
+import java.io.Serializable
+
+data class Person(val first: String, val last: String, val birthday: String): Serializable

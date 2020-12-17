@@ -1,4 +1,4 @@
-package uk.birthdays.core.entities
+package uk.birthdays.core
 
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
@@ -6,14 +6,15 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-
 class NetworkManager {
     private val BASE_API_URL = "https://randomuser.me/"
     private val gson = GsonBuilder().create()
 
-    private val httpLoggingInterceptor: HttpLoggingInterceptor = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+    private val httpLoggingInterceptor: HttpLoggingInterceptor = HttpLoggingInterceptor().setLevel(
+        HttpLoggingInterceptor.Level.BODY
+    )
     private val okHttpClientBuilder = OkHttpClient.Builder()
-            .addInterceptor(httpLoggingInterceptor)
+        .addInterceptor(httpLoggingInterceptor)
 
     private val okHttpClient = okHttpClientBuilder.build()
 

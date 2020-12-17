@@ -5,5 +5,5 @@ import uk.birthdays.core.entities.app.Person
 
 object ApiEntitiesMapper {
 
-    fun ApiPerson.toApp() = Person(name, birthday)
+    fun ApiPerson.toApp() = Person(first, last, birthday)
 }

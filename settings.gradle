@@ -1,3 +1,4 @@
+include ':profile'
 include ':core'
 include ':catalog'
 include ':app'

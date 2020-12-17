@@ -13,7 +13,7 @@ import uk.birthdays.core.entities.app.Person
 class CatalogViewModel: ViewModel() {
     private val persons = MutableLiveData<List<Person>>()
     private val loading = MutableLiveData<Boolean>()
-    //inject with DI
+    //todo inject with DI
     private val catalogManager = CatalogManager()
     
     fun loadPersons(){

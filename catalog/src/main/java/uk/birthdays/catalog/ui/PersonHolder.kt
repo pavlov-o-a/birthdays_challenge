@@ -10,8 +10,11 @@ import uk.birthdays.core.entities.app.Person
 class PersonHolder(parent: ViewGroup):
     RecyclerView.ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.holder_person, parent, false)) {
 
+    //todo add date transformation
     fun bind(person: Person){
-        itemView.findViewById<TextView>(R.id.nameTV).text = person.name
+        itemView.findViewById<TextView>(R.id.nameTV).text = person.first + " " + person.last
         itemView.findViewById<TextView>(R.id.birthdayTV).text = person.birthday
+        val avatarText = person.first.firstOrNull()?.toString()?:"" + person.last.firstOrNull()?.toString()
+        itemView.findViewById<TextView>(R.id.avatarTV).text = avatarText
     }
 }
