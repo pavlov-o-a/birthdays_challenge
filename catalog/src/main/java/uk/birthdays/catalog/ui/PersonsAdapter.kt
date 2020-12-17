@@ -2,7 +2,7 @@ package uk.birthdays.catalog.ui
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import uk.birthdays.core.entities.Person
+import uk.birthdays.core.entities.app.Person
 
 class PersonsAdapter(private var items: List<Person> = listOf()): RecyclerView.Adapter<PersonHolder>() {
 

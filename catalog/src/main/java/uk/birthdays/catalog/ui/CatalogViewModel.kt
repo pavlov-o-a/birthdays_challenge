@@ -5,11 +5,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import uk.birthdays.catalog.logic.CatalogManager
-import uk.birthdays.core.entities.Person
+import uk.birthdays.core.entities.app.Person
 
 class CatalogViewModel: ViewModel() {
     private val persons = MutableLiveData<List<Person>>()

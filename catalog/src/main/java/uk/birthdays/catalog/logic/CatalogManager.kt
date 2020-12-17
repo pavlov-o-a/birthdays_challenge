@@ -2,10 +2,12 @@ package uk.birthdays.catalog.logic
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.supervisorScope
-import uk.birthdays.core.entities.Person
-import java.lang.RuntimeException
+import uk.birthdays.core.entities.NetworkManager
+import uk.birthdays.core.entities.app.Person
 
-class CatalogManager {
+//inject networkManager with DI
+class CatalogManager(networkManager: NetworkManager = NetworkManager()) {
+    private val interactor = CatalogInteractor(networkManager)
 
     suspend fun getPersons(): List<Person>{
         var list = listOf<Person>()
@@ -14,7 +16,7 @@ class CatalogManager {
                 delay(500)
                 //ask from network
                 //if successful save to local db
-                throw RuntimeException("no network")
+                list = interactor.getPersons()
             } catch (exc: Exception){
                 exc.printStackTrace()
                 //try to get from local db

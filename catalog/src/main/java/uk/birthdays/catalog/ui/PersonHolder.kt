@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import uk.birthdays.catalog.R
-import uk.birthdays.core.entities.Person
+import uk.birthdays.core.entities.app.Person
 
 class PersonHolder(parent: ViewGroup):
     RecyclerView.ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.holder_person, parent, false)) {
