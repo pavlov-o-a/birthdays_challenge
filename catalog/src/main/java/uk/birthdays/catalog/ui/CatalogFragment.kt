@@ -25,7 +25,7 @@ class CatalogFragment: Fragment(R.layout.layout_catalog) {
             personsAdapter.update(it)
         }
         viewModel.getLoadingListener().observe(viewLifecycleOwner) {
-
+            catalogProgress.visibility = if (it) View.VISIBLE else View.GONE
         }
 
         viewModel.loadPersons()

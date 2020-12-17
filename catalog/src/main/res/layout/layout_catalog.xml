@@ -31,4 +31,9 @@
         tools:itemCount="10"
         tools:listitem="@layout/holder_person"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+    <ProgressBar
+        android:id="@+id/catalogProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
