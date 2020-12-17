@@ -13,7 +13,7 @@ class PersonHolder(parent: ViewGroup):
     //todo add date transformation
     fun bind(person: Person){
         itemView.findViewById<TextView>(R.id.nameTV).text = person.getFullName()
-        itemView.findViewById<TextView>(R.id.birthdayTV).text = person.birthday
+        itemView.findViewById<TextView>(R.id.birthdayTV).text = person.getShortBirthday()
         itemView.findViewById<TextView>(R.id.avatarTV).text = person.getInitials()
     }
 }

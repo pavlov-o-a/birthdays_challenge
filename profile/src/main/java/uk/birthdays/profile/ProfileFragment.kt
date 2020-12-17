@@ -19,7 +19,7 @@ class ProfileFragment(): Fragment(R.layout.layout_profile) {
     private fun fillUi(person: Person){
         avatarTV.text = person.getInitials()
         nameTV.text = person.getFullName()
-        ageTV.text = person.birthday
+        ageTV.text = person.getAge()
         backButton.setOnClickListener { findNavController().navigateUp() }
     }
 }
