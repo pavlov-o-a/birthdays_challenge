@@ -24,3 +24,6 @@ needs to add/fix if i have more time:
 - add pull to refresh functionality to catalog
 - maybe switch from plugin android-extensions (deprecated)
 - add more tests
+
+
+![](https://github.com/pavlov-o-a/birthdays_challenge/blob/main/screenshot.jpeg)
