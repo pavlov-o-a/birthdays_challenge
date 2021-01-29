@@ -1,6 +1,5 @@
 # birthdays_challenge
-installation:
-    build through Android studio. Should be one button click.
+The challenge was to spend on this project no more than 3 hours.
 
 features:
 - uses Android Architecture Components
@@ -25,17 +24,3 @@ needs to add/fix if i have more time:
 - add pull to refresh functionality to catalog
 - maybe switch from plugin android-extensions (deprecated)
 - add more tests
-
-links:
-    - https://github.com/pavlov-o-a
-    - https://codeberg.org/Freeyourgadget/Gadgetbridge/pulls/2021 - pull request to open source project
-        i have cracked sony swr12 band application and added initial support to application (steps,
-        alarms, etc.)
-    - https://play.google.com/store/apps/details?id=ru.mts.books.droid - application from my current
-    place of work. 1M+ downloads, 300K installed RN.
-
-me:
-    Oleg Pavlov
-    forpoststuff@gmail.com
-    +7(981)995-65-79
-    Saint-Petersburg, Russia
